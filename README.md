@@ -7,6 +7,7 @@ Tyler McCluskey
 PROJECT GOALS
 
 In this project, students will explore and implement hybrid or adaptive sorting algorithms to improve the efficiency of the sorting process through piggybacking the existing sorting algorithms.
+
 ALGORITHM DESCRIPTION
 
 The algorithm I went with improving is hybrid quicksort. This algorithm combines both quicksort and insertion sort. Insertion sort is better when the array is small, so the algorithm uses insertion sort when the array is small enough. Otherwise, it uses quicksort.
@@ -15,8 +16,8 @@ Altogether my algorithm consistently performs better than the traditional hybrid
 
 BENCHMARKING RESULTS
 
-The algorithm consistantly seems to be about .002 seconds fast in all cases
-My algorithm handles 
+The algorithm consistantly seems to be about .002 seconds or more faster in all cases
+
 
 -----------------------TEST 1-----------------------
 
@@ -49,5 +50,13 @@ Worst Case hybrid quick adaptive sort execution time:  0.0010023117065429688
 
 Best Case hybrid quick sort execution time:  0.0029981136322021484
 Worst case hybrid quick sort execution time:  0.0029976367950439453
+
+-----------------------TEST 5-----------------------
+
+Best Case hybrid quick adaptive sort execution time:  0.0009996891021728516
+Worst Case hybrid quick adaptive sort execution time:  0.0010004043579101562
+
+Best Case hybrid quick sort execution time:  0.003000020980834961
+Worst case hybrid quick sort execution time:  0.002000570297241211
 
 
