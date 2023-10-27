@@ -15,6 +15,9 @@ Altogether my algorithm consistently performs better than the traditional hybrid
 
 BENCHMARKING RESULTS
 
+The algorithm consistantly seems to be about .002 seconds fast in all cases
+My algorithm handles 
+
 -----------------------TEST 1-----------------------
 
 Best Case hybrid quick adaptive sort execution time:  0.001001119613647461

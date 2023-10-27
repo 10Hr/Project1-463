@@ -122,11 +122,9 @@ def hybrid_quick_sort(arr, low, high):
 import time
 import random
 
-bestCaseHOLDER  = list(range(1, 101))
-worstCaseHOLDER = list(range(100, 0, -1))
 
-bestCase = bestCaseHOLDER
-worstCase = worstCaseHOLDER
+bestCase = list(range(1, 101))
+worstCase = list(range(100, 0, -1))
 
 #averageCase = [random.randint(1, 1000) for _ in range(100)]
 
@@ -145,20 +143,20 @@ hybrid_quick_sort_adaptive(worstCase, 0, len(worstCase) - 1)
 end_timeADIS = time.time()
 print("Worst Case hybrid quick adaptive sort execution time: ",end_timeADIS-start_timeADIS)
 
-bestCase = bestCaseHOLDER
-worstCase = worstCaseHOLDER
+bestCase = list(range(1, 101))
+worstCase = list(range(100, 0, -1))
 
 
 start_timeIS = time.time()
 
-hybrid_quick_sort(bestCase, 0, 99)
+hybrid_quick_sort(bestCase, 0, len(bestCase) - 1)
 
 
 end_timeIS = time.time()
 print("Best Case hybrid quick sort execution time: ",end_timeIS-start_timeIS)
 
 start_timeIS = time.time()
-hybrid_quick_sort(worstCase, 0, 99)
+hybrid_quick_sort(worstCase, 0, len(worstCase) - 1)
 end_timeIS = time.time()
 print("Worst case hybrid quick sort execution time: ",end_timeIS-start_timeIS)
 
@@ -216,7 +214,7 @@ this algorithm combines both quicksort and insertion sort. Insertion sort is bet
 How I improved this algorithm is firstly 
 I improved the insertion sort by making adding makeing use a binary search within the sorted portion of the array to find the correct position to determin where to insert each element
 this reduces the number of comparisons compared to a standard insertion sort. I also improved the quicksort by making it a randomized quicksort. This is done by choosing a random element as pivot. 
-The worst case time complexity of this algorithm is O(n^2) and the best case time complexity is O(n log n). 
+
 
 All together my algorthim consistantly performs better than the traditional hybrid quicksort. I call it Hybrid Adaptive Quick Sort as it uses a little bit of both.
 
@@ -234,5 +232,3 @@ The elements are shifted to make space for the key, and the key is inserted at t
 
 
 '''
-
-
